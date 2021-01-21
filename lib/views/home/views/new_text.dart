@@ -24,6 +24,7 @@ class _NewTextMainViewState extends State<NewTextMainView> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               TextFormField(
+                autofocus: true,
                 controller: _controller.titleController,
                 decoration: InputDecoration(
                   labelText: "Title"
@@ -36,7 +37,6 @@ class _NewTextMainViewState extends State<NewTextMainView> {
                 ),
               ),
               TextFormField(
-                autofocus: true,
                 controller: _controller.contentController,
                 maxLines: 10,
                 decoration: InputDecoration(
