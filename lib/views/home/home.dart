@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:textify/views/home/tabview/browse.dart';
 import 'package:textify/views/home/tabview/saved.dart';
+import 'package:textify/views/home/views/new_text.dart';
 
 class HomeMainView extends StatefulWidget {
   @override
@@ -25,7 +26,9 @@ class _HomeMainViewState extends State<HomeMainView> with SingleTickerProviderSt
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          
+          Navigator.push(context, MaterialPageRoute(
+            builder: (_) => NewTextMainView()
+          ));
         },
       ),
       appBar: AppBar(
